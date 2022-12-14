@@ -32,6 +32,6 @@
         height: 250px;
         overflow-y: auto;
         padding: 2rem;
-        background-color: $light-color;
+        background-color: $dark-color;
     }
 </style>

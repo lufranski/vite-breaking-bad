@@ -38,10 +38,17 @@
 </script>
 
 <template>
+
+  <div class="container logo">
+    <img id="logo" src="./assets/Rick-And-Morty-Logo.png" alt="">
+  </div>
+
   <div class="container">
     <div class="container inner">
         <div class="label">
             Select category
+
+            <font-awesome-icon id="chevron" icon="fa-chevron-down" />
         </div>
 
         <section id="characters">
@@ -57,20 +64,26 @@
 @use './style/partials/variables' as *;
 
 .container {
-  background-color: $bg-color;
+  background-color: $dark-color;
   padding: .5rem;
   // DEBUG
-
+  
   .inner {
     width: 80%;
-    // DEBUG
-    border: 1px solid #fff;
+    border: 1px solid $light-color;
+    border-radius: 10px;
 
     .label {
-      background-color: $light-color;
+      background-color: $dark-color;
       border-radius: 5px;
-      width: 20%;
+      border: 1px solid $light-color;
+      width: 25%;
       padding: .5rem;
+      color: $light-color;
+
+      #chevron {
+        margin-left: 25px;
+      }
     }
 
     #characters {
@@ -83,4 +96,13 @@
   }
 }
 
+.logo {
+  width: 30%;
+  margin: 0 auto;
+  
+  #logo {
+    width: 100%;
+  
+  }
+}
 </style>

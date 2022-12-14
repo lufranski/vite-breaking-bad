@@ -26,7 +26,8 @@
 
     .card {
         max-width: 100px;
-        background-color: $bg-color;
+        // background-color: $dark-color;
+        border: 1px solid $light-color;
         padding: .4rem;
         border-radius: 10px;
 
@@ -36,7 +37,7 @@
         }
 
         .bg {
-            background-color: $dark-color;
+            border: 1px solid $light-color;
             min-height: 100px;
             padding: .2rem;
             border-radius: 10px;

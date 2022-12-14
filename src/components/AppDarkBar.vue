@@ -15,6 +15,7 @@
 
     div {
         background-color: $dark-color;
+        border: 1px solid $light-color;
         padding: .2rem;
 
         p {
