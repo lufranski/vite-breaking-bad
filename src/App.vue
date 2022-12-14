@@ -1,4 +1,5 @@
 <script>
+  import axios from 'axios';
   import AppDarkBar from './components/AppDarkBar.vue'
   import AppCardList from './components/AppCardList.vue'
   import {store} from './store.js'
@@ -12,6 +13,26 @@
         return {
           store
         }
+      },
+      methods: {
+        getCharacter(){
+
+          axios
+            .get(store.apiUrl)
+            .then(res => {
+              store.characterList = res.data.results;
+            })
+            .catch(err => {
+              console.log('errori', err);
+            }
+  
+            );
+  
+            
+        }
+      },
+      mounted (){
+        this.getCharacter();
       }    
   }
 </script>
@@ -39,7 +60,6 @@
   background-color: $bg-color;
   padding: .5rem;
   // DEBUG
-  height: 300px;
 
   .inner {
     width: 80%;
@@ -54,7 +74,7 @@
 
     #characters {
       background-color: $light-color;
-      width: 90%;
+      width: 98%;
       padding: .2rem;
       margin-top: 2px;
       // DEBUG

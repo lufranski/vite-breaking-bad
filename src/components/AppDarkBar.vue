@@ -6,7 +6,7 @@
 
 <template>
     <div>
-        <p>Found 62 characters</p>
+        <p>Alive aliens in Rick & Morty</p>
     </div>
 </template>
 
@@ -16,8 +16,6 @@
     div {
         background-color: $dark-color;
         padding: .2rem;
-        // DEBUG
-        height: 100px;
 
         p {
             color: $light-color;
