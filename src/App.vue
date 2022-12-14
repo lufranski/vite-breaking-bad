@@ -1,9 +1,17 @@
 <script>
   import AppDarkBar from './components/AppDarkBar.vue'
+  import AppCardList from './components/AppCardList.vue'
+  import {store} from './store.js'
   
   export default {
       components: {
-        AppDarkBar
+        AppDarkBar,
+        AppCardList
+      },
+      data() {
+        return {
+          store
+        }
       }    
   }
 </script>
@@ -17,6 +25,7 @@
 
         <section id="characters">
             <AppDarkBar />
+            <AppCardList />
         </section>
     </div>
   </div>
