@@ -31,7 +31,7 @@
         gap: 20px 5px;
         height: 250px;
         overflow-y: auto;
-        padding: 3rem;
+        padding: 2rem;
         background-color: $light-color;
     }
 </style>

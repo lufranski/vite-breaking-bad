@@ -69,14 +69,14 @@
     .label {
       background-color: $light-color;
       border-radius: 5px;
+      width: 20%;
       padding: .5rem;
     }
 
     #characters {
       background-color: $light-color;
       width: 98%;
-      padding: .2rem;
-      margin-top: 2px;
+      margin: 10px auto;
       // DEBUG
       min-height: 70%;
     }

@@ -10,9 +10,12 @@
 
         <div class="bg">
 
-            <h3>{{info.name}}</h3>
-            <h4>{{info.species}}</h4>
-            <h4>{{info.status}}</h4>
+            <h4>{{info.name}}</h4>
+            
+            <div class="par">
+                <p>{{info.species}}</p>
+                <p>{{info.status}}</p>
+            </div>
 
         </div>
     </div>
@@ -34,12 +37,19 @@
 
         .bg {
             background-color: $dark-color;
+            min-height: 100px;
             padding: .2rem;
             border-radius: 10px;
+            position: relative;
             
-            h3,h4 {
+            h4,p {
                 color: $light-color;
                 font-size: 10px;
+            }
+                
+            .par {
+                position: absolute;
+                bottom: 5%;
             }
         }
 
