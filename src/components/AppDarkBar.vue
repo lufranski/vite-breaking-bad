@@ -29,7 +29,8 @@
     div {
         background-color: $dark-color;
         border: 1px solid $light-color;
-        padding: .2rem 1rem;
+        padding: .6rem 1rem;
+        z-index: 100;
 
         p {
             color: $light-color;

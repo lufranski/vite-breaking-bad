@@ -29,10 +29,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        // gap: 20px 5px;
+        gap: 20px 5px;
         height: 250px;
         overflow-y: auto;
-        padding: 2rem;
+        padding: .7rem 2rem;
         background-color: $dark-color;
     }
 </style>
