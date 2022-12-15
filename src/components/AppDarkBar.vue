@@ -12,7 +12,14 @@
 
 <template>
     <div>
-        <p>{{store.filterText.toUpperCase()}} <span v-if="store.filterText !== ''">state</span> Characters in Rick & Morty - Found {{store.characterList.length}} results:</p>
+        <p>
+            <span v-if="store.filterText !== ''">
+                {{store.filterText.toUpperCase()}} state
+            </span> 
+            Characters in Rick & Morty 
+            <span v-if="store.filterText !== ''">- Found {{store.characterList.length}} results:
+            </span>
+        </p>
     </div>
 </template>
 
@@ -22,7 +29,7 @@
     div {
         background-color: $dark-color;
         border: 1px solid $light-color;
-        padding: .2rem;
+        padding: .2rem 1rem;
 
         p {
             color: $light-color;
