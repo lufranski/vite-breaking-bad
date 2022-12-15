@@ -25,32 +25,34 @@
 @use '../style/partials/variables' as *;
 
     .card {
-        max-width: 100px;
-        // background-color: $dark-color;
+        max-width: 20%;
         border: 1px solid $light-color;
         padding: .4rem;
         border-radius: 10px;
 
         img {
             width: 100%;
-            border-radius: 10px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
         }
 
         .bg {
             border: 1px solid $light-color;
             min-height: 100px;
             padding: .2rem;
-            border-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
             position: relative;
             
             h4,p {
                 color: $light-color;
-                font-size: 10px;
+                font-size: 13px;
+                margin-bottom: 5px;
             }
                 
             .par {
                 position: absolute;
-                bottom: 5%;
+                bottom: 15%;
             }
         }
 

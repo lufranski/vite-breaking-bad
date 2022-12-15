@@ -28,7 +28,8 @@
     .container {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px 5px;
+        justify-content: space-evenly;
+        // gap: 20px 5px;
         height: 250px;
         overflow-y: auto;
         padding: 2rem;

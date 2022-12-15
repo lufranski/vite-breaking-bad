@@ -74,10 +74,10 @@
 .container {
   background-color: $dark-color;
   padding: .5rem;
-  // DEBUG
   
   .inner {
     width: 80%;
+    padding: 2rem 0;
     border: 1px solid $light-color;
     border-radius: 10px;
 

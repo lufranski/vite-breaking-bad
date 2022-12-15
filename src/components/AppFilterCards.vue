@@ -26,16 +26,21 @@
 <style lang="scss" scoped>
     @use '../style/partials/variables' as *;
 
-    label {
-      color: $light-color;
-      margin-right: 10px;
+    div {
+        padding: 0 1rem;
+
+        label {
+          color: $light-color;
+          margin-right: 10px;
+        }
+    
+        select {
+          background-color: $dark-color;
+          border: 1px solid $light-color;
+          border-radius: 10px;
+          padding: .3rem;
+          color: $light-color;
+        }
     }
 
-    select {
-      background-color: $dark-color;
-      border: 1px solid $light-color;
-      border-radius: 10px;
-      padding: .3rem;
-      color: $light-color;
-    }
 </style>
