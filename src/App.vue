@@ -45,11 +45,20 @@
 
   <div class="container">
     <div class="container inner">
-        <div class="label">
+        <!-- <div class="label">
             Select category
 
             <font-awesome-icon id="chevron" icon="fa-chevron-down" />
-        </div>
+
+        </div> -->
+        <label for="status">Filter for status:</label>
+
+        <select name="status" id="status">
+            <option value="null"> - - - </option>
+            <option value="alive">Alive</option>
+            <option value="dead">Dead</option>
+            <option value="unkown">Unkown</option>
+        </select>
 
         <section id="characters">
             <AppDarkBar />
@@ -73,21 +82,17 @@
     border: 1px solid $light-color;
     border-radius: 10px;
 
-    .label {
-      background-color: $dark-color;
-      border-radius: 5px;
-      border: 1px solid $light-color;
-      width: 20%;
-      padding: .5rem;
+    label {
       color: $light-color;
-      position: relative;
-      cursor: pointer;
+      margin-right: 10px;
+    }
 
-      #chevron {
-        // margin-left: 48%;
-        position: absolute;
-        right: 5px;
-      }
+    select {
+      background-color: $dark-color;
+      border: 1px solid $light-color;
+      border-radius: 10px;
+      padding: .3rem;
+      color: $light-color;
     }
 
     #characters {
