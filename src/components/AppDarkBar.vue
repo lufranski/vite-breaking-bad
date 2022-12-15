@@ -17,7 +17,8 @@
                 {{store.filterText.toUpperCase()}} state
             </span> 
             Characters in Rick & Morty 
-            <span v-if="store.filterText !== ''">- Found {{store.characterList.length}} results:
+            <span v-if="store.filterText !== ''">
+                - Found {{store.characterList.length}} results:
             </span>
         </p>
     </div>

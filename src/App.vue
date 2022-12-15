@@ -7,10 +7,10 @@
   
   export default {
       components: {
-    AppDarkBar,
-    AppCardList,
-    AppFilterCards
-},
+        AppDarkBar,
+        AppCardList,
+        AppFilterCards
+      },
       data() {
         return {
           store
@@ -86,15 +86,15 @@
       background-color: $light-color;
       width: 98%;
       margin: 10px auto;
-      // DEBUG
-      min-height: 70%;
+      
     }
   }
 }
 
 .logo {
-  width: 30%;
+  width: 35%;
   margin: -30px auto;
+  border: none;
   
   #logo {
     width: 100%;
