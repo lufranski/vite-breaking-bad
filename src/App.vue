@@ -2,13 +2,15 @@
   import axios from 'axios';
   import AppDarkBar from './components/AppDarkBar.vue'
   import AppCardList from './components/AppCardList.vue'
+  import AppFilterCards from './components/AppFilterCards.vue';
   import {store} from './store.js'
   
   export default {
       components: {
-        AppDarkBar,
-        AppCardList
-      },
+    AppDarkBar,
+    AppCardList,
+    AppFilterCards
+},
       data() {
         return {
           store
@@ -51,14 +53,7 @@
             <font-awesome-icon id="chevron" icon="fa-chevron-down" />
 
         </div> -->
-        <label for="status">Filter for status:</label>
-
-        <select name="status" id="status">
-            <option value="null"> - - - </option>
-            <option value="alive">Alive</option>
-            <option value="dead">Dead</option>
-            <option value="unkown">Unkown</option>
-        </select>
+        <AppFilterCards />
 
         <section id="characters">
             <AppDarkBar />
@@ -81,19 +76,6 @@
     width: 80%;
     border: 1px solid $light-color;
     border-radius: 10px;
-
-    label {
-      color: $light-color;
-      margin-right: 10px;
-    }
-
-    select {
-      background-color: $dark-color;
-      border: 1px solid $light-color;
-      border-radius: 10px;
-      padding: .3rem;
-      color: $light-color;
-    }
 
     #characters {
       background-color: $light-color;
