@@ -53,7 +53,7 @@
             <font-awesome-icon id="chevron" icon="fa-chevron-down" />
 
         </div> -->
-        <AppFilterCards />
+        <AppFilterCards @filterCharacters="getCharacter"/>
 
         <section id="characters">
             <AppDarkBar />

@@ -1,15 +1,21 @@
 <script>
+    import {store} from '../store.js';
+    
     export default {
-
+        data(){
+            return {
+                store
+            }
+        }
     }
 </script>
 
 <template>
-    <label for="status">Filter for status:</label>
+    <label for="status">Filter by status:</label>
 
     <select name="status" id="status">
         <option value="null"> - - - </option>
-        <option value="alive">Alive</option>
+        <option value="alive" @click="$emit('filterCharacters')">Alive</option>
         <option value="dead">Dead</option>
         <option value="unkown">Unkown</option>
     </select>
