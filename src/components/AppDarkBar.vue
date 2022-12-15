@@ -12,7 +12,7 @@
 
 <template>
     <div>
-        <p>{{store.filterText.toUpperCase()}} Characters in Rick & Morty - Found {{store.characterList.length}} results:</p>
+        <p>{{store.filterText.toUpperCase()}} <span v-if="store.filterText !== ''">state</span> Characters in Rick & Morty - Found {{store.characterList.length}} results:</p>
     </div>
 </template>
 
