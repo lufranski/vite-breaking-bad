@@ -77,12 +77,16 @@
       background-color: $dark-color;
       border-radius: 5px;
       border: 1px solid $light-color;
-      width: 25%;
+      width: 20%;
       padding: .5rem;
       color: $light-color;
+      position: relative;
+      cursor: pointer;
 
       #chevron {
-        margin-left: 25px;
+        // margin-left: 48%;
+        position: absolute;
+        right: 5px;
       }
     }
 
