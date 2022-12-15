@@ -11,14 +11,16 @@
 </script>
 
 <template>
-    <label for="status">Filter by status:</label>
-
-    <select name="status" id="status">
-        <option value="null"> - - - </option>
-        <option value="alive" @click="$emit('filterCharacters')">Alive</option>
-        <option value="dead">Dead</option>
-        <option value="unkown">Unkown</option>
-    </select>
+    <div>
+        <label for="status">Filter by status:</label>
+    
+        <select v-model="store.filterText" name="status" id="status" @change="$emit('filterCharacters')">
+            <option value="any"> Any </option>
+            <option value="alive">Alive</option>
+            <option value="dead">Dead</option>
+            <option value="unkown">Unkown</option>
+        </select>
+    </div>
 </template>
 
 <style lang="scss" scoped>

@@ -18,9 +18,22 @@
       },
       methods: {
         getCharacter(){
-
+          
+          let myURL;
+          
+          
+          if(this.store.filterText === 'alive') {
+              myURL += `?${this.store.statusApi}=${this.store.filterText}`;
+          } else if(this.store.filterText === 'dead') {
+              myURL += `?${this.store.statusApi}=${this.store.filterText}`
+          } else if(this.store.filterText === 'unknown') {
+              myURL += `?${this.store.statusApi}=${this.store.filterText}`
+          } else {
+              myURL = this.store.apiUrl;
+          }
+          
           axios
-            .get(store.apiUrl)
+            .get(myURL)
             .then(res => {
               store.characterList = res.data.results;
             })
@@ -47,13 +60,7 @@
 
   <div class="container">
     <div class="container inner">
-        <!-- <div class="label">
-            Select category
-
-            <font-awesome-icon id="chevron" icon="fa-chevron-down" />
-
-        </div> -->
-        <AppFilterCards @filterCharacters="getCharacter"/>
+        <AppFilterCards @filterCharacters="getCharacter()"/>
 
         <section id="characters">
             <AppDarkBar />
