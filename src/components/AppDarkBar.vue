@@ -1,12 +1,18 @@
 <script>
-    export default {
+    import {store} from '../store.js';
 
+    export default {
+        data(){
+            return{
+                store
+            }
+        },
     }
 </script>
 
 <template>
     <div>
-        <p>Alive aliens in Rick & Morty</p>
+        <p>{{store.filterText.toUpperCase()}} Characters in Rick & Morty - Found {{store.characterList.length}} results:</p>
     </div>
 </template>
 
