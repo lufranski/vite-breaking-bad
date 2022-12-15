@@ -19,18 +19,15 @@
       methods: {
         getCharacter(){
           
-          let myURL;
+          let myURL = this.store.apiUrl;
           
-          
-          if(this.store.filterText === 'alive') {
-              myURL += `?${this.store.statusApi}=${this.store.filterText}`;
-          } else if(this.store.filterText === 'dead') {
-              myURL += `?${this.store.statusApi}=${this.store.filterText}`
-          } else if(this.store.filterText === 'unknown') {
-              myURL += `?${this.store.statusApi}=${this.store.filterText}`
-          } else {
-              myURL = this.store.apiUrl;
+          if (this.store.filterText === 'any') {
+             myURL = this.store.apiUrl;
+          }else if (this.store.filterText !== '') {
+            myURL += `?${this.store.statusApi}=${this.store.filterText}`;
           }
+          
+
           
           axios
             .get(myURL)

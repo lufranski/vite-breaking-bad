@@ -18,7 +18,7 @@
             <option value="any"> Any </option>
             <option value="alive">Alive</option>
             <option value="dead">Dead</option>
-            <option value="unkown">Unkown</option>
+            <option value="unknown">Unkown</option>
         </select>
     </div>
 </template>
