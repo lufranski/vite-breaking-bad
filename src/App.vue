@@ -74,11 +74,10 @@
 .container {
   background-color: $dark-color;
   padding: .2rem;
-  min-height: 285px;
   
   .inner {
     width: 80%;
-    padding: 2rem 0;
+    padding: .5rem 0;
     border: 1px solid $light-color;
     border-radius: 10px;
 
@@ -92,8 +91,7 @@
 }
 
 .logo {
-  width: 35%;
-  margin: -30px auto;
+  width: 30%;
   border: none;
   
   #logo {
